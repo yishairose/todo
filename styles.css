@@ -243,8 +243,17 @@ button:hover {
     display: flex;
     justify-content: space-between;
     margin-bottom: 5px;
+    padding: 8px;
+    border-radius: 5px;
+    box-shadow: 10px 10px 21px -5px rgba(0, 0, 0, 0.61);
+    -webkit-box-shadow: 10px 10px 21px -5px rgba(0, 0, 0, 0.61);
+    -moz-box-shadow: 10px 10px 21px -5px rgba(0, 0, 0, 0.61);
 
+}
 
+.item:hover {
+    box-shadow: none;
+    transform: translateY(-6px);
 }
 
 @keyframes append-animate {
@@ -272,7 +281,20 @@ button:hover {
 
 }
 
+.edit-btn {
+    background-color: #ffb703;
+    color: #f4f7fc;
+    border-radius: 5px;
+    margin-right: 5px;
+
+}
+
 .delete-btn:hover {
+    cursor: pointer;
+    background-color: #023047;
+}
+
+.edit-btn:hover {
     cursor: pointer;
     background-color: #023047;
 }
